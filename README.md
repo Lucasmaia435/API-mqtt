@@ -1,6 +1,6 @@
-# Broker MQTT :desktop_computer:
+# API broker MQTT :desktop_computer:
 
-:octocat: Este repositório mostra um Broker MQTT básico construído usando Nodejs e MQTT.js
+:octocat: Este repositório mostra uma API de Broker MQTT básico construído usando Nodejs
 
 --- 
 # Configurando e preparando o ambiente
@@ -20,21 +20,21 @@ v10.16.0
 
 ## Crie uma pasta para o projeto 
 ```bash
-C:\Users\user\Desktop> mkdir mqtt_broker
-C:\Users\user\Desktop> cd mqtt_broker
+C:\Users\user\Desktop> mkdir api_mqtt
+C:\Users\user\Desktop> cd api_mqtt
 ```
 > mkdir "nome_da_pasta" cria uma nova pasta
 > cd "nome_da_pasta" entra na pasta
 
 ## Inicie um projeto 
 ```bash
-C:\Users\user\Desktop\mqtt_broker> npm init -y
+C:\Users\user\Desktop\api_mqtt> npm init -y
 ```
 Irá ser gerado um package.json, que é o arquivo de gerenciamento do nosso projeto, onde irá estar listado o autor, dependencias usadas e etc.
 
 ```json
 {
-  "name": "mqtt_node",
+  "name": "api_mqtt",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -53,9 +53,9 @@ Irá ser gerado um package.json, que é o arquivo de gerenciamento do nosso proj
 1. [MQTT.js](https://github.com/mqttjs/MQTT.js)
 1. [CORS](https://www.npmjs.com/package/cors)
 ```bash
-C:\Users\user\Desktop\mqtt_broker> npm install mqtt --save
-C:\Users\user\Desktop\mqtt_broker> npm install express --save
-C:\Users\user\Desktop\mqtt_broker> npm install cors
+C:\Users\user\Desktop\api_mqtt> npm install mqtt --save
+C:\Users\user\Desktop\api_mqtt> npm install express --save
+C:\Users\user\Desktop\api_mqtt> npm install cors
 ```
 Depois da instalação ser concluída será adicionado a sessão de dependencies ao nosso package.json:
 ```json
